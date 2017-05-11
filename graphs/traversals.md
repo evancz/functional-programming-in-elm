@@ -96,7 +96,7 @@ findDepsHelp visited unvisited graph =
             Set.insert next visited
 
           nextDeps =
-            Maybe.withDefault [] (Dict.lookup next graph)
+            Maybe.withDefault [] (Dict.get next graph)
 
           newUnvisited =
             nextDeps ++ rest
