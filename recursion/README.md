@@ -142,7 +142,7 @@ Like with the first strategy, the best way to get used to thinking this way is t
 >
 > When you get that, do the same for the `sum` function.
 >
->     sum : List a -> Int
+>     sum : List Int -> Int
 >     sum list =
 >       ...
 >
