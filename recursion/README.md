@@ -126,7 +126,7 @@ reverseHelp list reversedList =
 
 And there we go, a `reverse` implementation!
 
-This `foo` and `fooHelp` pattern is quite common. The `fooHelp` part lets you carry around extra state around as you recurse through some data structure, and the `foo` part lets you hide those details from people using the function. So `reverseHelp` carries an extra list around, and `reverse` gives the initial `[]` to make the public API nicer.
+This `foo` and `fooHelp` pattern is quite common. The `fooHelp` part lets you carry around extra state as you recurse through some data structure, and the `foo` part lets you hide those details from people using the function. So `reverseHelp` carries an extra list around, and `reverse` gives the initial `[]` to make the public API nicer.
 
 Like with the first strategy, the best way to get used to thinking this way is to practice!
 
