@@ -1,0 +1,6 @@
+{
+    "title": "Functional Programming in Elm",
+    "description": "Outlining the techniques of functional programming.",
+    "author": "Evan Czaplicki",
+    "root": "book"
+}
