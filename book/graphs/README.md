@@ -18,7 +18,7 @@ In practice, it is far more common to use one-way edges, or *directed edges*. A 
 
 Notice that the edges switched from lines to arrows. Examples of this kind of graph include:
 
-  - **Twitter Follows** &mdash; Each node is a *person* and each edge is a *follow*. So person `1` follows `2` and `4`, but they do not follow back. Person `2` and `3` follow each other. We may want to ask if a tweet from `4` ever be seen by `6` through retweets? Can a tweet from `4` ever be seen by `7` through retweets?
+  - **Twitter Follows** &mdash; Each node is a *person* and each edge is a *follow*. So person `1` follows `2` and `4`, but they do not follow back. Person `2` and `3` follow each other. We may want to ask if a tweet from `4` will ever be seen by `6` through retweets? Can a tweet from `4` ever be seen by `7` through retweets?
 
   - **The Internet** &mdash; Each node is a *web page* and each edge is a *link* from page-to-page. Page `4` only has one outgoing link, pointing to page `6`. If there are tons of link to particular pages, maybe that is a proxy for how important that page is.
 
