@@ -19,7 +19,7 @@ First, check out this animation of how we want to merge two sorted lists:
 
 In both lists, the smallest element is the first element. We look at both of those and pick the smallest overall. That becomes the smallest element in our resulting list. We can then repeat this process until we ended up with a merged list. But how do we write the code to do this?!
 
-On the previous page of this book, we said that one strategy for writing recursive functions is to (1) use `case` and (2) pretend you done. Let’s try that route:
+On the previous page of this book, we said that one strategy for writing recursive functions is to (1) use `case` and (2) pretend you are done. Let’s try that route:
 
 ```elm
 merge : List comparable -> List comparable -> List comparable
