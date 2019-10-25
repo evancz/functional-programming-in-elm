@@ -113,7 +113,7 @@ merge listOne listTwo =
         frontTwo :: merge listOne restTwo
 ```
 
-We take the lowest value off of one of the lists, and then call `merge` on the leftovers. Now that we have a `merge` function that can combine two sorted lists, but how do we *get* those two lists?
+We take the lowest value off of one of the lists, and then call `merge` on the leftovers. Now we have a `merge` function that can combine two sorted lists, but how do we *get* those two lists?
 
 
 ## Split
