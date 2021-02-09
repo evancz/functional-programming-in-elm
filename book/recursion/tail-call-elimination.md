@@ -159,7 +159,7 @@ Not exactly like this of course, but that is the idea! So now we just need *one*
 
 ## Folding over Lists
 
-Comparing `List.foldl` and `List.foldr` is one of the classic ways to build familiarity with tail-call eliminitation. When you write your first `foldl` it looks something like this:
+Comparing `List.foldl` and `List.foldr` is one of the classic ways to build familiarity with tail-call elimination. When you write your first `foldl` it looks something like this:
 
 ```elm
 foldl : (a -> b -> b) -> b -> List a -> b
