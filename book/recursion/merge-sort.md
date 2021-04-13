@@ -177,19 +177,19 @@ split list =
   splitHelp list True [] []
 
 splitHelp : List a -> Bool -> List a -> List a -> ( List a, List a )
-splitHelp list shouldAddToOne halfOne halfTwo =
+splitHelp list addToHalfOne halfOne halfTwo =
   case list of
     [] ->
       (halfOne, halfTwo)
 
     first :: rest ->
-      if shouldAddToOne then
-        splitHelp rest (not shouldAddToOne) (first :: halfOne) halfTwo
+      if addToHalfOne then
+        splitHelp rest (not addToHalfOne) (first :: halfOne) halfTwo
       else
-        splitHelp rest (not shouldAddToOne) halfOne (first :: halfTwo)
+        splitHelp rest (not addToHalfOne) halfOne (first :: halfTwo)
 ```
 
-Now as we go through the `shouldAddToOne` value keeps switching between `True` and `False` so we end up splitting every other element into separate lists.
+Now as we go through, the `addToHalfOne` value keeps switching between `True` and `False` so we end up splitting every other element into separate lists.
 
 > **Note:** There are tons of other ways to implement `split` that can be fun and educational to explore. For example, having an `Int` that increments as you go through and adding to one list or the other depending on whether it is odd or even. There are two implementations that are particularly interesting though, and I wrote about them [here](../appendix/split.md). These implementations do not really teach you practical skills, but they are definitely worth checking out!
 
