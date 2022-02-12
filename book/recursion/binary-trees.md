@@ -292,6 +292,7 @@ Both recursive functions were discovered using the “pretend you are done” st
 >         ...
 >
 > Try flattening it in different ways. Can you make it so the values are in-order in the resulting list? Can you use the `foo` and `fooHelp` technique to build up an in-order list without using `(++)`?
+>
 > **Exercise 3:** Write a fold function for trees. The fold function does not need to guarantee a particular order of traversal.
 >
 >     fold : (a -> b -> b) -> b -> Tree a -> b
